@@ -4,6 +4,21 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+p, a, li, span, h1, h2, h3, h4, h5 {
+  font-family: 'Roboto', sans-serif; }
+
+h1 {
+  font-size: 28px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 20px; }
+
+p, a, li, span {
+  font-size: 18px; }
+
 .branding {
   text-align: center; }
   .branding ul li {
@@ -18,5 +33,54 @@ html {
   background-size: 100% 10px;
   background-repeat: no-repeat;
   background-position-y: bottom; }
+
+.medals__team .medals__team__gold {
+  height: 295px;
+  text-align: center; }
+  .medals__team .medals__team__gold h3 {
+    color: white;
+    font-size: 16px;
+    margin: 0;
+    padding: 20px 0;
+    text-transform: uppercase; }
+  .medals__team .medals__team__gold .team__gold {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px; }
+    .medals__team .medals__team__gold .team__gold::after {
+      clear: both;
+      content: "";
+      display: block; }
+    .medals__team .medals__team__gold .team__gold .team__gold__medal {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      .medals__team .medals__team__gold .team__gold .team__gold__medal:last-child {
+        margin-right: 0; }
+    .medals__team .medals__team__gold .team__gold .team__gold__team-flag-name {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      .medals__team .medals__team__gold .team__gold .team__gold__team-flag-name:last-child {
+        margin-right: 0; }
+      .medals__team .medals__team__gold .team__gold .team__gold__team-flag-name p {
+        color: white;
+        font-weight: 300;
+        font-size: 30px;
+        margin: 0;
+        padding-top: 20px; }
+    .medals__team .medals__team__gold .team__gold .team__gold__score {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      .medals__team .medals__team__gold .team__gold .team__gold__score:last-child {
+        margin-right: 0; }
+      .medals__team .medals__team__gold .team__gold .team__gold__score h1 .count {
+        color: white;
+        font-size: 50px; }
 
 /*# sourceMappingURL=styles.css.map */

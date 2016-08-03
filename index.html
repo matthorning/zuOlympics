@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>zuOlympic Leaderboard</title>
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="sass/normalize.css" type="text/css"/>
     <link rel="stylesheet" href="sass/styles.css" type="text/css"/>
   </head>
@@ -22,8 +22,25 @@
       <section class="medals__team">
         <div class="medals__team__gold" style="background-image: url('http://placehold.it/1200x295');">
           <h3>Country Leaderboard</h3>
+          <div class="team__gold">
+            <div class="team__gold__medal">G</div>
+            <div class="team__gold__team-flag-name">
+              <img src="http://lorempixel.com/215/115/">
+              <p>United Nations of Beer</p>
+            </div>
+            <div class="team__gold__score">
+              <h1><span class="count">306</span><span class="points">pts</span></h1>
+            </div>
+          </div>
         </div>
-        <div class="medals__team__silver"></div>
+        <div class="medals__team__silver-other">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
       </section>
       <section class="medals__athletes">
         <div class="athletes__male">
@@ -45,5 +62,7 @@
       
     </footer>
 
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 </html>

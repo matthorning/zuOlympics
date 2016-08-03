@@ -1,0 +1,41 @@
+.medals__team {
+  .medals__team__gold {
+    height: 295px;
+    text-align: center;
+    h3 {
+      color: white;
+      font-size: 16px;
+      margin: 0;
+      padding: 20px 0;
+      text-transform: uppercase;
+    }
+    .team__gold {
+      @include outer-container;
+      margin-top: 10px;
+      .team__gold__medal {
+        @include span-columns(4);
+      }
+      .team__gold__team-flag-name {
+        @include span-columns(4);
+        p {
+          color: white;
+          font-weight: 300;
+          font-size: 30px;
+          margin: 0;
+          padding-top: 20px;
+        }
+      }
+      .team__gold__score {
+        @include span-columns(4);
+        padding: 56px 0;
+        h1 .count,
+        h1 .points {
+          color: white;
+        }
+        h1 .count {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}
