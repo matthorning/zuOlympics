@@ -30,8 +30,10 @@ p, a, li, span {
 
 .branding {
   text-align: center;
+  padding-top: 1px;
   ul li {
     display: inline-block;
+    color: $medal-silver;
   }
 }
 

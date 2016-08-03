@@ -28,14 +28,90 @@
       .team__gold__score {
         @include span-columns(4);
         padding: 56px 0;
-        h1 .count,
-        h1 .points {
-          color: white;
-        }
-        h1 .count {
-          font-size: 50px;
+        h1 {
+          margin: 0;
+          .count,
+          .points {
+            color: white;
+          }
+          .count {
+            font-size: 50px;
+            font-weight: 700;
+          }
+          .points {
+            font-weight: 300;
+          }
         }
       }
     }
+  }
+  .medals__team__other {
+    padding-top: 20px;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        border-bottom: 1px solid gray;
+        padding: 10px 0;
+        @include outer-container;
+        .team__medal {
+          @include span-columns(1);
+          text-align: center;
+          padding: 18px 0;
+          span {
+            border-radius: 50%;
+            padding: 2px 7px;
+          }
+        }
+        &:first-child {
+          .team__medal span {
+            border: 2px solid $medal-silver;
+            color: $medal-silver;
+          }
+        }
+        &:nth-child(2) {
+          .team__medal span {
+            border: 2px solid $medal-bronze;
+            color: $medal-bronze;
+          }
+        }
+        .team__flag-name {
+          @include span-columns(9);
+          img {
+            display: inline-block;
+            position: relative;
+            top: 5px;
+            width: 40px;
+          }
+          p {
+            display: inline-block;
+          }
+        }
+        .team__score {
+          @include span-columns(2);
+          padding: 14px 0;
+          text-align: center;
+          .count {
+            font-size: 26px;
+            font-weight: 700;
+          }
+          .points {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.medals__athletes {
+  @include outer-container;
+  margin-top: 60px;
+  .athletes__male {
+    @include span-columns(6);
+  }
+  .athletes__female {
+    @include span-columns(6);
   }
 }

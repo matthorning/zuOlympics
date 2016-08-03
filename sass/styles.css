@@ -20,9 +20,11 @@ p, a, li, span {
   font-size: 18px; }
 
 .branding {
-  text-align: center; }
+  text-align: center;
+  padding-top: 1px; }
   .branding ul li {
-    display: inline-block; }
+    display: inline-block;
+    color: #A8A8A8; }
 
 .rainbow {
   height: 5px;
@@ -76,11 +78,104 @@ p, a, li, span {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 31.76157%; }
+      width: 31.76157%;
+      padding: 56px 0; }
       .medals__team .medals__team__gold .team__gold .team__gold__score:last-child {
         margin-right: 0; }
-      .medals__team .medals__team__gold .team__gold .team__gold__score h1 .count {
-        color: white;
-        font-size: 50px; }
+      .medals__team .medals__team__gold .team__gold .team__gold__score h1 {
+        margin: 0; }
+        .medals__team .medals__team__gold .team__gold .team__gold__score h1 .count,
+        .medals__team .medals__team__gold .team__gold .team__gold__score h1 .points {
+          color: white; }
+        .medals__team .medals__team__gold .team__gold .team__gold__score h1 .count {
+          font-size: 50px;
+          font-weight: 700; }
+        .medals__team .medals__team__gold .team__gold .team__gold__score h1 .points {
+          font-weight: 300; }
+.medals__team .medals__team__other {
+  padding-top: 20px; }
+  .medals__team .medals__team__other ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .medals__team .medals__team__other ul li {
+      border-bottom: 1px solid gray;
+      padding: 10px 0;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto; }
+      .medals__team .medals__team__other ul li::after {
+        clear: both;
+        content: "";
+        display: block; }
+      .medals__team .medals__team__other ul li .team__medal {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 6.17215%;
+        text-align: center;
+        padding: 18px 0; }
+        .medals__team .medals__team__other ul li .team__medal:last-child {
+          margin-right: 0; }
+        .medals__team .medals__team__other ul li .team__medal span {
+          border-radius: 50%;
+          padding: 2px 7px; }
+      .medals__team .medals__team__other ul li:first-child .team__medal span {
+        border: 2px solid #A8A8A8;
+        color: #A8A8A8; }
+      .medals__team .medals__team__other ul li:nth-child(2) .team__medal span {
+        border: 2px solid #965A38;
+        color: #965A38; }
+      .medals__team .medals__team__other ul li .team__flag-name {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 74.41059%; }
+        .medals__team .medals__team__other ul li .team__flag-name:last-child {
+          margin-right: 0; }
+        .medals__team .medals__team__other ul li .team__flag-name img {
+          display: inline-block;
+          position: relative;
+          top: 5px;
+          width: 40px; }
+        .medals__team .medals__team__other ul li .team__flag-name p {
+          display: inline-block; }
+      .medals__team .medals__team__other ul li .team__score {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 14.70196%;
+        padding: 14px 0;
+        text-align: center; }
+        .medals__team .medals__team__other ul li .team__score:last-child {
+          margin-right: 0; }
+        .medals__team .medals__team__other ul li .team__score .count {
+          font-size: 26px;
+          font-weight: 700; }
+        .medals__team .medals__team__other ul li .team__score .points {
+          font-size: 14px; }
+
+.medals__athletes {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .medals__athletes::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .medals__athletes .athletes__male {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .medals__athletes .athletes__male:last-child {
+      margin-right: 0; }
+  .medals__athletes .athletes__female {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .medals__athletes .athletes__female:last-child {
+      margin-right: 0; }
 
 /*# sourceMappingURL=styles.css.map */
