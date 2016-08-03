@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.branding {
+  text-align: center; }
+  .branding ul li {
+    display: inline-block; }
+
+.rainbow {
+  height: 5px;
+  width: 100%;
+  background-image: linear-gradient(to right, #1483c8 20%, #fab142 20%, #fab142 40%, black 40%, black 60%, #18a555 60%, #18a555 80%, #e92045 80%);
+  -webkit-background-size: 100% 5px;
+  -moz-background-size: 100% 5px;
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position-y: bottom; }
+
+/*# sourceMappingURL=styles.css.map */

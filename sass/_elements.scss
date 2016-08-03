@@ -1,0 +1,36 @@
+$blue: #1482C6;
+$gold: #FAB041;
+$black: #000000;
+$green: #18A554;
+$red: #E91F45;
+
+$medal-gold: #D9A441;
+$medal-silver: #A8A8A8;
+$medal-bronze: #965A38;
+
+.branding {
+  text-align: center;
+  ul li {
+    display: inline-block;
+  }
+}
+
+.rainbow {
+  height: 5px;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    hsl(203, 82%, 43%) 20%,
+    hsl(36, 95%, 62%) 20%,
+    hsl(36, 95%, 62%) 40%,
+    hsl(0, 0%, 0%) 40%,
+    hsl(0, 0%, 0%) 60%,
+    hsl(146, 75%, 37%) 60%,
+    hsl(146, 75%, 37%) 80%,
+    hsl(349, 82%, 52%) 80%);
+  -webkit-background-size: 100% 5px;
+  -moz-background-size: 100% 5px;
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
