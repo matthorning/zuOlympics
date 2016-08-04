@@ -56,3 +56,31 @@ p, a, li, span {
   background-repeat: no-repeat;
   background-position-y: bottom;
 }
+
+footer {
+  background-color: black;
+  height: 140px;
+  margin-top: 60px;
+  width: 100%;
+  .footer__container {
+    @include outer-container;
+  }
+  .text {
+    @include span-columns(9);
+    p {
+      color: white;
+      margin: 0;
+      &:first-child {
+        padding: 45px 0 10px 0;
+      }
+    }
+  }
+  .logo {
+    @include span-columns(3);
+    text-align: center;
+    padding: 40px 0;
+    img {
+      width: 100px;
+    }
+  }
+}

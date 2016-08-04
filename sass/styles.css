@@ -36,6 +36,42 @@ p, a, li, span {
   background-repeat: no-repeat;
   background-position-y: bottom; }
 
+footer {
+  background-color: black;
+  height: 140px;
+  margin-top: 60px;
+  width: 100%; }
+  footer .footer__container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
+    footer .footer__container::after {
+      clear: both;
+      content: "";
+      display: block; }
+  footer .text {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%; }
+    footer .text:last-child {
+      margin-right: 0; }
+    footer .text p {
+      color: white;
+      margin: 0; }
+      footer .text p:first-child {
+        padding: 45px 0 10px 0; }
+  footer .logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    text-align: center; }
+    footer .logo:last-child {
+      margin-right: 0; }
+    footer .logo img {
+      width: 100px; }
+
 .medals__team .medals__team__gold {
   height: 295px;
   text-align: center; }
@@ -99,7 +135,7 @@ p, a, li, span {
     padding: 0;
     list-style: none; }
     .medals__team .medals__team__other ul li {
-      border-bottom: 1px solid gray;
+      border-bottom: 1px solid #A8A8A8;
       padding: 10px 0;
       max-width: 1200px;
       margin-left: auto;
@@ -119,13 +155,16 @@ p, a, li, span {
           margin-right: 0; }
         .medals__team .medals__team__other ul li .team__medal span {
           border-radius: 50%;
+          font-size: 22px;
+          font-weight: 700;
           padding: 2px 7px; }
       .medals__team .medals__team__other ul li:first-child .team__medal span {
         border: 2px solid #A8A8A8;
         color: #A8A8A8; }
       .medals__team .medals__team__other ul li:nth-child(2) .team__medal span {
         border: 2px solid #965A38;
-        color: #965A38; }
+        color: #965A38;
+        padding-left: 8px; }
       .medals__team .medals__team__other ul li .team__flag-name {
         float: left;
         display: block;
@@ -139,7 +178,8 @@ p, a, li, span {
           top: 5px;
           width: 40px; }
         .medals__team .medals__team__other ul li .team__flag-name p {
-          display: inline-block; }
+          display: inline-block;
+          padding-left: 10px; }
       .medals__team .medals__team__other ul li .team__score {
         float: left;
         display: block;
@@ -158,24 +198,86 @@ p, a, li, span {
 .medals__athletes {
   max-width: 1200px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-top: 60px; }
   .medals__athletes::after {
     clear: both;
     content: "";
     display: block; }
-  .medals__athletes .athletes__male {
+  .medals__athletes .team__row {
+    display: block; }
+    .medals__athletes .team__row::after {
+      clear: both;
+      content: "";
+      display: block; }
+    .medals__athletes .team__row:nth-child(2) {
+      margin-top: 60px; }
+  .medals__athletes .team__athletes {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%; }
-    .medals__athletes .athletes__male:last-child {
+    width: 31.76157%; }
+    .medals__athletes .team__athletes:last-child {
       margin-right: 0; }
-  .medals__athletes .athletes__female {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    .medals__athletes .athletes__female:last-child {
-      margin-right: 0; }
+    .medals__athletes .team__athletes .team__flag-name {
+      text-align: center; }
+      .medals__athletes .team__athletes .team__flag-name img {
+        width: 120px; }
+      .medals__athletes .team__athletes .team__flag-name h2 {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 30px; }
+    .medals__athletes .team__athletes .athletes__single {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .medals__athletes .team__athletes .athletes__single li {
+        display: block;
+        border-bottom: 1px solid #A8A8A8;
+        padding: 10px 0; }
+        .medals__athletes .team__athletes .athletes__single li::after {
+          clear: both;
+          content: "";
+          display: block; }
+        .medals__athletes .team__athletes .athletes__single li .althlete__photo-name {
+          float: left;
+          display: block;
+          margin-right: 4.82916%;
+          width: 65.05695%; }
+          .medals__athletes .team__athletes .athletes__single li .althlete__photo-name:last-child {
+            margin-right: 0; }
+          .medals__athletes .team__athletes .athletes__single li .althlete__photo-name .photo {
+            display: inline-block; }
+            .medals__athletes .team__athletes .athletes__single li .althlete__photo-name .photo img {
+              border-radius: 50%;
+              display: block;
+              width: 50px; }
+          .medals__athletes .team__athletes .athletes__single li .althlete__photo-name .name-event {
+            display: inline-block;
+            position: relative;
+            top: -6px;
+            padding-left: 10px; }
+            .medals__athletes .team__athletes .athletes__single li .althlete__photo-name .name-event .name {
+              font-weight: 700;
+              margin: 0; }
+            .medals__athletes .team__athletes .athletes__single li .althlete__photo-name .name-event .event {
+              margin: 0;
+              text-transform: uppercase;
+              font-size: 14px; }
+        .medals__athletes .team__athletes .athletes__single li .athlete__score {
+          float: left;
+          display: block;
+          margin-right: 4.82916%;
+          width: 30.11389%;
+          padding: 11px 0;
+          text-align: center; }
+          .medals__athletes .team__athletes .athletes__single li .athlete__score:last-child {
+            margin-right: 0; }
+          .medals__athletes .team__athletes .athletes__single li .athlete__score .count {
+            font-weight: 700;
+            font-size: 28px; }
+          .medals__athletes .team__athletes .athletes__single li .athlete__score .points {
+            font-size: 13px; }
 
 /*# sourceMappingURL=styles.css.map */
