@@ -8,6 +8,15 @@ $medal-gold: #D9A441;
 $medal-silver: #A8A8A8;
 $medal-bronze: #965A38;
 
+@include media(max-width 1200px) {
+  .medals__team__other,
+  .medals__athletes,
+  .footer__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 p, a, li, span, h1, h2, h3, h4, h5 {
   font-family: 'Roboto', sans-serif;
 }
@@ -31,9 +40,17 @@ p, a, li, span {
 .branding {
   text-align: center;
   padding-top: 1px;
-  ul li {
-    display: inline-block;
-    color: $medal-silver;
+  ul {
+    padding: 0;
+    li {
+      display: inline-block;
+      color: $medal-silver;
+      &:first-child,
+      &:last-child {
+        position: relative;
+        top: -13px;
+      }
+    }
   }
 }
 
@@ -74,13 +91,21 @@ footer {
         padding: 45px 0 10px 0;
       }
     }
+    @include media(max-width 600px) {
+      p {
+        font-size: 14px;
+      }
+    }
   }
   .logo {
     @include span-columns(3);
     text-align: center;
     padding: 40px 0;
-    img {
-      width: 100px;
+    @include media(max-width 600px) {
+      padding: 55px 0;
+      img {
+        width: 50px;
+      }
     }
   }
 }

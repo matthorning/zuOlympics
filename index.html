@@ -1,6 +1,23 @@
 <html>
   <head>
     <title>zuOlympic Leaderboard</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="sass/normalize.css" type="text/css"/>
     <link rel="stylesheet" href="sass/styles.css" type="text/css"/>
@@ -11,7 +28,7 @@
       <div class="branding">
         <ul>
           <li>zuOlympic</li>
-          <li>{{LOGO}}</li>
+          <li><img src="img/zu-logo-olympics.png"></li>
           <li>Leaderboard</li>
         </ul>
       </div>
@@ -20,16 +37,16 @@
 
     <section class="content__body">
       <section class="medals__team">
-        <div class="medals__team__gold" style="background-image: url('http://placehold.it/1200x295');">
+        <div class="medals__team__gold" style="background-image: url('img/gold_background.png');">
           <h3>Country Leaderboard</h3>
           <div class="team__gold">
-            <div class="team__gold__medal">G</div>
+            <div class="team__gold__medal"><img src="img/gold-medal.png"></div>
             <div class="team__gold__team-flag-name">
               <img src="img/flag.png">
-              <p>United Nations of Beer</p>
+              <p>Team 1</p>
             </div>
             <div class="team__gold__score">
-              <h1><span class="count">306</span><span class="points">pts</span></h1>
+              <h1><span class="count">100</span><span class="points">pts</span></h1>
             </div>
           </div>
         </div>
@@ -40,8 +57,8 @@
                 <span>S</span>
               </div>
               <div class="team__flag-name">
-                <img src="img/small-flag.png">
-                <p>Land of Honey Badgers</p>
+                <img src="img/flag 1.png">
+                <p>Team 2</p>
               </div>
               <div class="team__score">
                 <span class="count">100</span>
@@ -53,8 +70,8 @@
                 <span>B</span>
               </div>
               <div class="team__flag-name">
-                <img src="img/small-flag.png">
-                <p>Land of Honey Badgers</p>
+                <img src="img/flag 2.png">
+                <p>Team 3</p>
               </div>
               <div class="team__score">
                 <span class="count">100</span>
@@ -66,8 +83,8 @@
                 <span>4</span>
               </div>
               <div class="team__flag-name">
-                <img src="img/small-flag.png">
-                <p>Land of Honey Badgers</p>
+                <img src="img/flag 3.png">
+                <p>Team 4</p>
               </div>
               <div class="team__score">
                 <span class="count">100</span>
@@ -79,8 +96,21 @@
                 <span>5</span>
               </div>
               <div class="team__flag-name">
-                <img src="img/small-flag.png">
-                <p>Land of Honey Badgers</p>
+                <img src="img/flag 4.png">
+                <p>Team 5</p>
+              </div>
+              <div class="team__score">
+                <span class="count">100</span>
+                <span class="points">pts</span>
+              </div>
+            </li>
+            <li>
+              <div class="team__medal">
+                <span>6</span>
+              </div>
+              <div class="team__flag-name">
+                <img src="img/flag 5.png">
+                <p>Team 6</p>
               </div>
               <div class="team__score">
                 <span class="count">100</span>
@@ -91,25 +121,84 @@
         </div>
       </section>
       <section class="medals__athletes">
-        <div class="team__row">
           <div class="team__athletes">
             <div class="team__flag-name">
               <img src="img/flag.png">
-              <h2>Land of Honey Badgers</h2>
+              <h2>Team 1</h2>
             </div>
             <ul class="athletes__single">
               <li>
                 <div class="althlete__photo-name">
                   <div class="photo">
-                    <img src="img/thumb.jpg">
+                    <img src="img/tony.png">
                   </div>
                   <div class="name-event">
-                    <p class="name">Laurence Nixon</p>
-                    <p class="event">Archery</p>
+                    <p class="name">Tony Zuck</p>
+                    <p class="event">TBD</p>
                   </div>
                 </div>
                 <div class="athlete__score">
-                  <span class="count">100</span>
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/kelly.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Kelly Martin</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/chelsey.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Chelsey Schaffel</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/shane.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Shane Doucette</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/sadie.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Sadie Swanson</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
                   <span class="points">pts</span>
                 </div>
               </li>
@@ -118,21 +207,81 @@
           <div class="team__athletes">
             <div class="team__flag-name">
               <img src="img/flag.png">
-              <h2>Land of Honey Badgers</h2>
+              <h2>Team 2</h2>
             </div>
             <ul class="athletes__single">
               <li>
                 <div class="althlete__photo-name">
                   <div class="photo">
-                    <img src="img/thumb.jpg">
+                    <img src="img/ryan.png">
                   </div>
                   <div class="name-event">
-                    <p class="name">Laurence Nixon</p>
-                    <p class="event">Archery</p>
+                    <p class="name">Ryan Lejbak</p>
+                    <p class="event">TBD</p>
                   </div>
                 </div>
                 <div class="athlete__score">
-                  <span class="count">100</span>
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/melissa.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Melissa Caron</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/val.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Valerie Baier</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/cory.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Cory Jacobsen</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/matt h.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Matt Horning</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
                   <span class="points">pts</span>
                 </div>
               </li>
@@ -141,46 +290,164 @@
           <div class="team__athletes">
             <div class="team__flag-name">
               <img src="img/flag.png">
-              <h2>Land of Honey Badgers</h2>
+              <h2>Team 3</h2>
             </div>
             <ul class="athletes__single">
               <li>
                 <div class="althlete__photo-name">
                   <div class="photo">
-                    <img src="img/thumb.jpg">
+                    <img src="img/toby.png">
                   </div>
                   <div class="name-event">
-                    <p class="name">Laurence Nixon</p>
-                    <p class="event">Archery</p>
+                    <p class="name">Toby Steinkey</p>
+                    <p class="event">TBD</p>
                   </div>
                 </div>
                 <div class="athlete__score">
-                  <span class="count">100</span>
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/zach.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Zach Perkins</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/molly.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Molly Seaton-Fast</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/dan b.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Toby Steinkey</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/cindy.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Cindy Mack</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
                   <span class="points">pts</span>
                 </div>
               </li>
             </ul>
           </div>
-        </div>
-        <div class="team__row">
           <div class="team__athletes">
             <div class="team__flag-name">
               <img src="img/flag.png">
-              <h2>Land of Honey Badgers</h2>
+              <h2>Team 4</h2>
             </div>
             <ul class="athletes__single">
               <li>
                 <div class="althlete__photo-name">
                   <div class="photo">
-                    <img src="img/thumb.jpg">
+                    <img src="img/albert.png">
                   </div>
                   <div class="name-event">
-                    <p class="name">Laurence Nixon</p>
-                    <p class="event">Archery</p>
+                    <p class="name">Albert Jame</p>
+                    <p class="event">TBD</p>
                   </div>
                 </div>
                 <div class="athlete__score">
-                  <span class="count">100</span>
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/jen.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Jennifer Korney</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/brit.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Brittany Lloy</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/dan s.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Dan Surkan</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/devon.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Devon Rathie-Wright</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
                   <span class="points">pts</span>
                 </div>
               </li>
@@ -189,21 +456,81 @@
           <div class="team__athletes">
             <div class="team__flag-name">
               <img src="img/flag.png">
-              <h2>Land of Honey Badgers</h2>
+              <h2>Team 5</h2>
             </div>
             <ul class="athletes__single">
               <li>
                 <div class="althlete__photo-name">
                   <div class="photo">
-                    <img src="img/thumb.jpg">
+                    <img src="img/dee.png">
                   </div>
                   <div class="name-event">
-                    <p class="name">Laurence Nixon</p>
-                    <p class="event">Archery</p>
+                    <p class="name">Deidre Lane</p>
+                    <p class="event">TBD</p>
                   </div>
                 </div>
                 <div class="athlete__score">
-                  <span class="count">100</span>
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/amy.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Amy Prokop</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/matt s.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Matt Stang</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/brady.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Brady Smith</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/michael.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Michael Hebert</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
                   <span class="points">pts</span>
                 </div>
               </li>
@@ -212,27 +539,86 @@
           <div class="team__athletes">
             <div class="team__flag-name">
               <img src="img/flag.png">
-              <h2>Land of Honey Badgers</h2>
+              <h2>Team 6</h2>
             </div>
             <ul class="athletes__single">
               <li>
                 <div class="althlete__photo-name">
                   <div class="photo">
-                    <img src="img/thumb.jpg">
+                    <img src="img/laurence.png">
                   </div>
                   <div class="name-event">
                     <p class="name">Laurence Nixon</p>
-                    <p class="event">Archery</p>
+                    <p class="event">TBD</p>
                   </div>
                 </div>
                 <div class="athlete__score">
-                  <span class="count">100</span>
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/anja.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Anja Gilje</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/cam.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Cam McHugh</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/kevin.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Kevin Warrington</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
+                  <span class="points">pts</span>
+                </div>
+              </li>
+              <li>
+                <div class="althlete__photo-name">
+                  <div class="photo">
+                    <img src="img/mellary.png">
+                  </div>
+                  <div class="name-event">
+                    <p class="name">Mellary Bitner</p>
+                    <p class="event">TBD</p>
+                  </div>
+                </div>
+                <div class="athlete__score">
+                  <span class="count">0</span>
                   <span class="points">pts</span>
                 </div>
               </li>
             </ul>
           </div>
-        </div>
       </section>
     </section>
 
@@ -243,7 +629,7 @@
           <p>That's right. We went there.</p>
         </div>
         <div class="logo">
-          <img src="img/zu_logo.jpg">
+          <img src="img/zu-logo-footer.png">
         </div>
       </div>
     </footer>

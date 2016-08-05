@@ -4,6 +4,12 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+@media screen and (max-width: 1200px) {
+  .medals__team__other,
+  .medals__athletes,
+  .footer__container {
+    padding-left: 15px;
+    padding-right: 15px; } }
 p, a, li, span, h1, h2, h3, h4, h5 {
   font-family: 'Roboto', sans-serif; }
 
@@ -22,9 +28,14 @@ p, a, li, span {
 .branding {
   text-align: center;
   padding-top: 1px; }
-  .branding ul li {
-    display: inline-block;
-    color: #A8A8A8; }
+  .branding ul {
+    padding: 0; }
+    .branding ul li {
+      display: inline-block;
+      color: #A8A8A8; }
+      .branding ul li:first-child, .branding ul li:last-child {
+        position: relative;
+        top: -13px; }
 
 .rainbow {
   height: 5px;
@@ -61,16 +72,23 @@ footer {
       margin: 0; }
       footer .text p:first-child {
         padding: 45px 0 10px 0; }
+    @media screen and (max-width: 600px) {
+      footer .text p {
+        font-size: 14px; } }
   footer .logo {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
-    text-align: center; }
+    text-align: center;
+    padding: 40px 0; }
     footer .logo:last-child {
       margin-right: 0; }
-    footer .logo img {
-      width: 100px; }
+    @media screen and (max-width: 600px) {
+      footer .logo {
+        padding: 55px 0; }
+        footer .logo img {
+          width: 50px; } }
 
 .medals__team .medals__team__gold {
   height: 295px;
@@ -85,7 +103,7 @@ footer {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px; }
+    margin-top: 28px; }
     .medals__team .medals__team__gold .team__gold::after {
       clear: both;
       content: "";
@@ -97,6 +115,10 @@ footer {
       width: 31.76157%; }
       .medals__team .medals__team__gold .team__gold .team__gold__medal:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 600px) {
+        .medals__team .medals__team__gold .team__gold .team__gold__medal img {
+          padding-top: 12px;
+          width: 60px; } }
     .medals__team .medals__team__gold .team__gold .team__gold__team-flag-name {
       float: left;
       display: block;
@@ -104,6 +126,9 @@ footer {
       width: 31.76157%; }
       .medals__team .medals__team__gold .team__gold .team__gold__team-flag-name:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 600px) {
+        .medals__team .medals__team__gold .team__gold .team__gold__team-flag-name img {
+          width: 100px; } }
       .medals__team .medals__team__gold .team__gold .team__gold__team-flag-name p {
         color: white;
         font-weight: 300;
@@ -115,7 +140,7 @@ footer {
       display: block;
       margin-right: 2.35765%;
       width: 31.76157%;
-      padding: 56px 0; }
+      padding: 30px 0; }
       .medals__team .medals__team__gold .team__gold .team__gold__score:last-child {
         margin-right: 0; }
       .medals__team .medals__team__gold .team__gold .team__gold__score h1 {
@@ -126,6 +151,9 @@ footer {
         .medals__team .medals__team__gold .team__gold .team__gold__score h1 .count {
           font-size: 50px;
           font-weight: 700; }
+          @media screen and (max-width: 600px) {
+            .medals__team .medals__team__gold .team__gold .team__gold__score h1 .count {
+              font-size: 40px; } }
         .medals__team .medals__team__gold .team__gold .team__gold__score h1 .points {
           font-weight: 300; }
 .medals__team .medals__team__other {
@@ -148,7 +176,7 @@ footer {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 6.17215%;
+        width: 14.70196%;
         text-align: center;
         padding: 18px 0; }
         .medals__team .medals__team__other ul li .team__medal:last-child {
@@ -169,7 +197,7 @@ footer {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 74.41059%; }
+        width: 65.88078%; }
         .medals__team .medals__team__other ul li .team__flag-name:last-child {
           margin-right: 0; }
         .medals__team .medals__team__other ul li .team__flag-name img {
@@ -199,26 +227,37 @@ footer {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60px; }
+  margin-top: 30px; }
   .medals__athletes::after {
     clear: both;
     content: "";
     display: block; }
-  .medals__athletes .team__row {
-    display: block; }
-    .medals__athletes .team__row::after {
-      clear: both;
-      content: "";
-      display: block; }
-    .medals__athletes .team__row:nth-child(2) {
-      margin-top: 60px; }
   .medals__athletes .team__athletes {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%; }
-    .medals__athletes .team__athletes:last-child {
-      margin-right: 0; }
+    margin-top: 30px; }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      .medals__athletes .team__athletes {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .medals__athletes .team__athletes:last-child {
+          margin-right: 0; }
+        .medals__athletes .team__athletes:nth-child(2n) {
+          margin-right: 0; }
+        .medals__athletes .team__athletes:nth-child(2n+1) {
+          clear: left; } }
+    @media screen and (min-width: 1200px) {
+      .medals__athletes .team__athletes {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        .medals__athletes .team__athletes:last-child {
+          margin-right: 0; }
+        .medals__athletes .team__athletes:nth-child(3n) {
+          margin-right: 0; }
+        .medals__athletes .team__athletes:nth-child(3n+1) {
+          clear: left; } }
     .medals__athletes .team__athletes .team__flag-name {
       text-align: center; }
       .medals__athletes .team__athletes .team__flag-name img {

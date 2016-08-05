@@ -11,12 +11,23 @@
     }
     .team__gold {
       @include outer-container;
-      margin-top: 10px;
+      margin-top: 28px;
       .team__gold__medal {
         @include span-columns(4);
+        @include media(max-width 600px) {
+          img {
+            padding-top: 12px;
+            width: 60px;
+          }
+        }
       }
       .team__gold__team-flag-name {
         @include span-columns(4);
+        @include media(max-width 600px) {
+          img {
+            width: 100px;
+          }
+        }
         p {
           color: white;
           font-weight: 300;
@@ -27,7 +38,7 @@
       }
       .team__gold__score {
         @include span-columns(4);
-        padding: 56px 0;
+        padding: 30px 0;
         h1 {
           margin: 0;
           .count,
@@ -36,6 +47,9 @@
           }
           .count {
             font-size: 50px;
+            @include media(max-width 600px) {
+              font-size: 40px;
+            }
             font-weight: 700;
           }
           .points {
@@ -56,7 +70,7 @@
         padding: 10px 0;
         @include outer-container;
         .team__medal {
-          @include span-columns(1);
+          @include span-columns(2);
           text-align: center;
           padding: 18px 0;
           span {
@@ -80,7 +94,7 @@
           }
         }
         .team__flag-name {
-          @include span-columns(9);
+          @include span-columns(8);
           img {
             display: inline-block;
             position: relative;
@@ -111,15 +125,17 @@
 
 .medals__athletes {
   @include outer-container;
-  margin-top: 60px;
-  .team__row {
-    @include row;
-    &:nth-child(2) {
-      margin-top: 60px;
-    }
-  }
+  margin-top: 30px;
   .team__athletes {
-    @include span-columns(4);
+    margin-top: 30px;
+    @include media(min-width 768px max-width 1199px) {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+    @include media(min-width 1200px) {
+      @include span-columns(4);
+      @include omega(3n);
+    }
     .team__flag-name {
       text-align: center;
       img {
