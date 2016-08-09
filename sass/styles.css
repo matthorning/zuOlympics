@@ -7,10 +7,11 @@ html {
 @media screen and (max-width: 1200px) {
   .medals__team__other,
   .medals__athletes,
-  .footer__container {
+  .footer__container,
+  .content__schedule {
     padding-left: 15px;
     padding-right: 15px; } }
-p, a, li, span, h1, h2, h3, h4, h5 {
+p, a, li, span, h1, h2, h3, h4, h5, th, td {
   font-family: 'Roboto', sans-serif; }
 
 h1 {
@@ -22,7 +23,11 @@ h2 {
 h3 {
   font-size: 20px; }
 
-p, a, li, span {
+h1, h2, h3 {
+  color: #333; }
+
+p, a, li, span, td, th {
+  color: #555;
   font-size: 18px; }
 
 .branding {
@@ -129,6 +134,8 @@ footer {
       @media screen and (max-width: 600px) {
         .medals__team .medals__team__gold .team__gold .team__gold__team-flag-name img {
           width: 100px; } }
+      .medals__team .medals__team__gold .team__gold .team__gold__team-flag-name img {
+        max-width: 180px; }
       .medals__team .medals__team__gold .team__gold .team__gold__team-flag-name p {
         color: white;
         font-weight: 300;
@@ -185,14 +192,14 @@ footer {
           border-radius: 50%;
           font-size: 22px;
           font-weight: 700;
-          padding: 2px 7px; }
+          padding: 2px 8px; }
       .medals__team .medals__team__other ul li:first-child .team__medal span {
         border: 2px solid #A8A8A8;
         color: #A8A8A8; }
       .medals__team .medals__team__other ul li:nth-child(2) .team__medal span {
         border: 2px solid #965A38;
         color: #965A38;
-        padding-left: 8px; }
+        padding-left: 7px; }
       .medals__team .medals__team__other ul li .team__flag-name {
         float: left;
         display: block;
@@ -203,7 +210,7 @@ footer {
         .medals__team .medals__team__other ul li .team__flag-name img {
           display: inline-block;
           position: relative;
-          top: 5px;
+          top: 7px;
           width: 40px; }
         .medals__team .medals__team__other ul li .team__flag-name p {
           display: inline-block;
@@ -226,14 +233,13 @@ footer {
 .medals__athletes {
   max-width: 1200px;
   margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px; }
+  margin-right: auto; }
   .medals__athletes::after {
     clear: both;
     content: "";
     display: block; }
   .medals__athletes .team__athletes {
-    margin-top: 30px; }
+    margin-top: 60px; }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       .medals__athletes .team__athletes {
         float: left;
@@ -266,7 +272,7 @@ footer {
         text-transform: uppercase;
         font-size: 20px;
         font-weight: 400;
-        margin-top: 30px; }
+        margin-top: 10px; }
     .medals__athletes .team__athletes .athletes__single {
       list-style: none;
       margin: 0;
@@ -318,5 +324,35 @@ footer {
             font-size: 28px; }
           .medals__athletes .team__athletes .athletes__single li .athlete__score .points {
             font-size: 13px; }
+
+.schedule__event {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .schedule__event::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .schedule__event h2 {
+    text-align: center;
+    margin-top: 60px; }
+  .schedule__event table {
+    border-collapse: collapse;
+    width: 100%; }
+    .schedule__event table tr > td:first-child {
+      text-align: right;
+      padding-right: 20px;
+      border-right: 1px solid #A8A8A8; }
+    .schedule__event table tr > td:nth-child(2) {
+      padding-left: 20px; }
+    .schedule__event table td {
+      font-size: 18px;
+      padding: 5px 0;
+      width: 50%; }
+      .schedule__event table td span {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        color: #A8A8A8; }
 
 /*# sourceMappingURL=styles.css.map */
